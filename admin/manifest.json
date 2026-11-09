@@ -1,0 +1,21 @@
+{
+  "name": "Kooza Admin",
+  "short_name": "KoozaAdmin",
+  "start_url": "admin_dashboard.php",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "description": "Admin panel for Kooza Clothes Shop",
+  "icons": [
+    {
+      "src": "images/watermark.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/watermark.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

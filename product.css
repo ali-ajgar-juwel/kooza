@@ -1,0 +1,176 @@
+/* =====================
+   PRODUCT PAGE
+   ===================== */
+
+.product-page{
+  padding: 15px;
+}
+
+/* Back button */
+.back-btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Images */
+.product-images{
+  text-align: center;
+}
+
+.product-main-img{
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Gallery */
+.product-gallery{
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  overflow-x: auto;
+}
+
+.product-gallery img{
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid #eee;
+}
+
+.product-gallery img:hover{
+  border-color: #000;
+}
+
+/* Details */
+.product-details{
+  margin-top: 20px;
+}
+
+.product-details h2{
+  font-size: 1.5rem;
+  margin-bottom: 6px;
+}
+
+.price{
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.desc{
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.product-buttons{
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.product-buttons button{
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #000;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.product-buttons .buy-now{
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+/* Reviews */
+.reviews{
+  margin-top: 30px;
+}
+
+.reviews h3{
+  margin-bottom: 10px;
+}
+
+.review-card{
+  background: #f2f2f2;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.review-card span{
+  float: right;
+}
+
+/* Review form */
+.review-form{
+  margin-top: 15px;
+}
+
+.review-form input,
+.review-form select,
+.review-form textarea{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.review-form button{
+  width: 100%;
+  padding: 12px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Popup */
+.popup{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  display: none;
+  z-index: 1000;
+}
+
+/* =====================
+   MOBILE FIX
+   ===================== */
+@media(max-width:600px){
+
+  .product-main-img{
+    height: 260px;
+  }
+
+  .product-details h2{
+    font-size: 1.25rem;
+  }
+
+  .price{
+    font-size: 1.15rem;
+  }
+
+  .product-buttons{
+    flex-direction: column;
+  }
+
+  .product-buttons button{
+    width: 100%;
+  }
+}
